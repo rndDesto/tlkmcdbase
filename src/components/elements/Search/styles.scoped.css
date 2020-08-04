@@ -1,0 +1,25 @@
+.root > div {
+  background-color: var(--background-color-2);
+  border-radius: 0.1875rem;
+  width: 15rem;
+  border: 0.125rem;
+  border-color: var(--grey-color-2);
+  box-sizing: border-box;
+  margin-left: -10rem;
+  margin-top: -1rem;
+}
+
+.root > div > img {
+  position: absolute;
+  padding-left: 13rem;
+  padding-top: 0.7rem;
+}
+
+.root > div > section {
+  width: 15rem;
+}
+
+.root > div > section > input {
+  border: none;
+  background-color: var(--grey-color-3);
+}

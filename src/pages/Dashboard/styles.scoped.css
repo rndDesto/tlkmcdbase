@@ -1,0 +1,193 @@
+.root {
+    display: flex;
+}
+.div {
+    margin-bottom: 1.1875rem;
+    flex: 100rem;
+    margin-right: 2.5rem;
+}
+
+.div > section:nth-child(2) {
+    background-color: var(--blue-color);
+    border-radius: 0.625rem;
+    margin-top: 1.1875rem;
+    flex: 2rem;
+    background-image: url('../../assets/ic-image.svg');
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.div > section > h4 {    
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 2.5rem;
+    width: 100%;
+}
+
+.div > section > p {
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 17.5rem;
+}
+
+.div > section > h5 {
+    margin-bottom: 1.5rem;
+}
+
+.div > section > div {
+    background-color: rgba(232,232,232, 0.25);
+    padding-left: 39rem;
+    padding-bottom: 16rem;
+    border-radius: 0.625rem;
+}
+
+.menu {
+    background-color: var(--background-color);
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    flex: 5rem;
+    display: grid;
+    margin-top : -2.5rem;
+    margin-right: -2.5rem;
+    margin-bottom: -2.5rem;
+}
+
+.menu > section {
+    background-color: var(--grey-color-3);
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.menu > section:nth-child(2) {
+    border-radius: 0.625rem;
+}
+
+.menu > section > img {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-left: 6.75rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.menu > section > h5 {
+    margin-top: 1rem;
+    border-radius: 0.625rem;
+    grid-column: 1 /span 2;
+}
+
+.menu > section:nth-child(3) {
+    background-color: var(--grey-color-3);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.625rem;
+    color: var(--blue-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.menu > section:nth-child(3) > img {
+    margin-left: 6.75rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;  
+}
+
+.menu > section:nth-child(3) > h5 {
+    margin-top: 1rem;
+    grid-column: 1 /span 2;
+}
+
+.menu > section:nth-child(4) {
+    background-color: var(--grey-color-3);
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.625rem;
+    color: var(--text-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    min-width: 20rem;
+}
+
+.menu > section:nth-child(4) > h5:nth-child(2) {
+    color: var(--primary-color);
+}
+
+.menu > section:nth-child(5){
+    background-color: var(--grey-color-3);
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.625rem;
+    color: var(--text-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    min-width: 20rem;
+}
+
+.menu > section:nth-child(5)> h5:nth-child(2) {
+    color: var(--primary-color);
+}
+
+
+.menu > section:nth-child(6) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color:var(--background-color-2);
+    background-color: var(--blue-color);
+    border-top-right-radius: 0.65rem;
+    border-top-left-radius: 0.65rem;
+}
+
+.menu > section:nth-child(7) {
+    margin-top: -1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-color);
+    border-bottom-right-radius: 0.65rem;
+    border-bottom-left-radius: 0.65rem;
+    background-color: var(--grey-color-3);
+}
+
+.menu > section:nth-child(7) > h4 {
+    color: var(--blue-color);
+    padding-bottom: 1rem;
+    padding-left: 2.75rem;
+    text-align: right;
+}

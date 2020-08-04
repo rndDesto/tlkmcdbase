@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/pages/Login render 1`] = `
+<main>
+  <figure>
+    <Webp
+      alt=""
+      className=""
+      name="ilu-transportation"
+      style={Object {}}
+    />
+    <img
+      alt="Logee"
+      src="/assets/ic-logo.svg"
+    />
+  </figure>
+  <section>
+    <h3>
+      Selamat Datang di
+      <br />
+      <span>
+        LogeeTrans.
+      </span>
+    </h3>
+    <p>
+      Solution untuk mengoptimalkan segala kebutuhan logistik perusahaan di seluruh Indonesia.
+    </p>
+    <c
+      onSubmit={[Function]}
+    />
+  </section>
+</main>
+`;
