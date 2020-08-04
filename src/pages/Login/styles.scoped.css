@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  height: 100vh;
+}
+
+.root > figure {
+  background-color: var(--primary-color);
+  flex: 1 1 55.56%;
+  position: relative;
+}
+
+.root > figure > picture > img {
+  bottom: 0;
+  height: 40.375rem;
+  position: absolute;
+  right: 0;
+}
+
+.root > figure > img {
+  left: 10.3125rem;
+  position: absolute;
+  top: 6rem;
+  width: 5rem;
+}
+
+.root > section {
+  flex: 1 1 44.44%;;
+  padding: 5rem 10.3125rem 9.375rem 7.8125rem;
+}
+
+.root > section > h3 {
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+}
+
+.root > section > h3 > span {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.root > section > p {
+  color: var(--grey-color-1);
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  margin-bottom: 11vh;
+}

@@ -1,0 +1,11 @@
+.root {
+  background-color: #fff;
+  box-shadow: -0.6875rem 0.5625rem 1.3125rem rgba(173, 182, 217, 0.170884);
+  border-radius: 0.3125rem;
+  height: 20rem;
+  margin: 0 0 0 36rem;
+  max-width: 28rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

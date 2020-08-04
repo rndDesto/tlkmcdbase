@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/elements/DataTable TableHeader 1`] = `<th />`;
+
+exports[`src/components/elements/DataTable TableRow 1`] = `
+<tr>
+  <td>
+    -
+  </td>
+  <td>
+    -
+  </td>
+  <td>
+    -
+  </td>
+</tr>
+`;
+
+exports[`src/components/elements/DataTable render 1`] = `
+<table
+  className=""
+>
+  <thead>
+    <tr>
+      <TableHeader
+        item={
+          Object {
+            "heading": "Nama",
+            "value": "name",
+          }
+        }
+      />
+      <TableHeader
+        item={
+          Object {
+            "heading": "Email",
+            "value": "email",
+          }
+        }
+      />
+      <TableHeader
+        item={
+          Object {
+            "heading": "No. Handphone",
+            "value": "phoneNumber",
+          }
+        }
+      />
+    </tr>
+  </thead>
+  <tbody>
+    <TableRow
+      column={
+        Array [
+          Object {
+            "heading": "Nama",
+            "value": "name",
+          },
+          Object {
+            "heading": "Email",
+            "value": "email",
+          },
+          Object {
+            "heading": "No. Handphone",
+            "value": "phoneNumber",
+          },
+        ]
+      }
+      item={
+        Object {
+          "email": "test@a.id",
+          "name": "Test",
+          "phoneNumber": "0811111111",
+        }
+      }
+    />
+    <TableRow
+      column={
+        Array [
+          Object {
+            "heading": "Nama",
+            "value": "name",
+          },
+          Object {
+            "heading": "Email",
+            "value": "email",
+          },
+          Object {
+            "heading": "No. Handphone",
+            "value": "phoneNumber",
+          },
+        ]
+      }
+      item={
+        Object {
+          "email": "test@a.id",
+          "name": "Test",
+          "phoneNumber": "0811111111",
+        }
+      }
+    />
+  </tbody>
+</table>
+`;
