@@ -1,9 +1,0 @@
-.root > button {
-  margin-top: 4rem;
-  width: 100%;
-}
-
-.error {
-  margin-top: 0.5rem;
-  color: var(--error-color);
-}
