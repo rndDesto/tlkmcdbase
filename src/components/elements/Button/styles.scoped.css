@@ -1,5 +1,5 @@
 .root {
-  background-color: var(--primary-color);
+  background-color: var(--palette-base-primary-main);
   border: none;
   border-radius: 0.25rem;
   color: #FFFFFF;

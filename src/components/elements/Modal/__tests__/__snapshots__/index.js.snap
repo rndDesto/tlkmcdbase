@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`src/components/elements/Modal Content 1`] = `
-<section
-  className=""
-/>
-`;

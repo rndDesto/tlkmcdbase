@@ -7,3 +7,9 @@ export const thousand = val => (
 );
 
 export const formatDate = (date, format) => date && moment(date).format(format);
+
+export const removeDot = val => (
+  val.toString().replace(/\./g, '')
+);
+
+export const noop = () => {};

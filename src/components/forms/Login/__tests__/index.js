@@ -15,11 +15,15 @@ useSelector.mockImplementation(fn => {
 });
 
 describe('src/components/forms/Login', () => {
+  let props = {
+    handleSubmit: jest.fn(),
+    pristine: true,
+    submitting: false
+  };
+
   test('render', () => {
     const shallow = new ShallowRenderer();
-    const tree = shallow.render(<Login />);
+    const tree = shallow.render(<Login {...props} />);
     expect(tree).toMatchSnapshot();
-    useSelector.mockImplementationOnce(() => ({ isLoading: true, message: 'error' }));
-    Login.defaultProps.handleSubmit();
   });
 });

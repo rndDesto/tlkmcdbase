@@ -1,4 +1,4 @@
-export const routes = {
+export default {
   DASHBOARD: () => { return `/`; },
-  LOGIN:() => { return `/login`; },
+  LOGIN:() => { return `/login`; }
 };

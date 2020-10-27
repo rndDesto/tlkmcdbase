@@ -1,6 +1,6 @@
-const EXPIRE_TIME_STORAGE = 'logee-transportation_expire_time';
-const TOKEN_STORAGE = 'logee-transportation_access_token';
-const USER_DATA_STORAGE = 'logee-transportation_user_data';
+const EXPIRE_TIME_STORAGE = 'codebase_expire_time';
+const TOKEN_STORAGE = 'codebase_access_token';
+const USER_DATA_STORAGE = 'codebase_user_data';
 
 export function setToken(value) {
   localStorage.setItem(TOKEN_STORAGE, value);

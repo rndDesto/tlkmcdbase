@@ -7,7 +7,7 @@ export default function Upload(props) {
   const { dirty, error, touched } = meta;
   const classes =   [
     styles.root,
-    !!data || styles.placeholder,
+    (data === null || (data && !data.name)) && styles.placeholder,
     !!error && (dirty || touched) && styles.error,
     className
   ].filter(Boolean).join(' ');
@@ -16,7 +16,7 @@ export default function Upload(props) {
       <label>{label}</label>
       <div className={classes}>
         <label>
-          <p>{data ? data.name : 'Belum ada file dipilih'}</p>
+          <p>{data !== null && data.name ? data.name  : 'Belum ada file dipilih'}</p>
           <p>Upload</p>
           <input  id={input.name} {...input} {...inputProps} type="file" />
         </label>
@@ -38,7 +38,10 @@ Upload.defaultProps = {
 
 Upload.propTypes = {
   className: PropTypes.string,
-  data: PropTypes.object,
+  data: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ]),
   helper: PropTypes.string,
   input: PropTypes.object,
   inputProps: PropTypes.object,

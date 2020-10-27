@@ -7,6 +7,7 @@ const regexNumber = /[^0-9]+/g;
 const regexNumberSpecial = /[^0-9,.]+/g;
 const regexNoSpace = /\s/g;
 const regexWebsite = /[^a-zA-Z0-9./:-]+/g;
+const regexSiup = /[^a-zA-Z0-9./-]+/g;
 
 export const alphabet = (value) => (
   value && value.replace(regexAlphabet, '')
@@ -30,6 +31,10 @@ export const numberKarakter = (value) => (
 
 export const noSpace = (value) => (
   value && value.replace(regexNoSpace, '')
+);
+
+export const siup = (value) => (
+  value && value.replace(regexSiup, '')
 );
 
 export const thousandSeparator = (value) => (

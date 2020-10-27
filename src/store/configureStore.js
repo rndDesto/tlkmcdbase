@@ -1,4 +1,4 @@
-import {createStore, compose, applyMiddleware} from 'redux';
+import { createStore, compose, applyMiddleware } from 'redux';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
 import { createBrowserHistory } from 'history';
@@ -19,7 +19,7 @@ function configureStoreProd(initialState) {
 
   return createStore(rootReducer, initialState, compose(
     applyMiddleware(...middlewares)
-    )
+  )
   );
 }
 
@@ -29,16 +29,7 @@ function configureStoreDev(initialState) {
     // Add other middleware on this line...
 
     // Redux middleware that spits an error on you when you try to mutate your state either inside a dispatch or between dispatches.
-    reduxImmutableStateInvariant({
-      ignore: [
-        'form.tambah-customer.values.customerNpwpFile',
-        'form.tambah-customer.values.customerSiupFile',
-        'form.tambah-customer.values.customerKtpFile',
-        'form.tambah-perusahaan.values.npwpFile',
-        'form.tambah-perusahaan.values.siupFile',
-        'form.tambah-perusahaan.values.ktpFile'
-      ]
-    }),
+    reduxImmutableStateInvariant({}),
 
 
     // thunk middleware can also accept an extra argument to be passed to each thunk action
@@ -50,7 +41,7 @@ function configureStoreDev(initialState) {
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // add support for Redux dev tools
   const store = createStore(rootReducer, initialState, composeEnhancers(
     applyMiddleware(...middlewares)
-    )
+  )
   );
 
   if (module.hot) {

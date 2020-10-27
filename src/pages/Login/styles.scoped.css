@@ -4,7 +4,7 @@
 }
 
 .root > figure {
-  background-color: var(--primary-color);
+  background-color: var(--palette-base-primary-main);
   flex: 1 1 55.56%;
   position: relative;
 }
@@ -29,18 +29,18 @@
 }
 
 .root > section > h3 {
-  color: var(--text-color);
+  color: var(--palette-black-10);
   margin-bottom: 2.5rem;
 }
 
 .root > section > h3 > span {
-  color: var(--primary-color);
+  color: var(--palette-base-primary-main);
   font-weight: bold;
   font-size: 2rem;
 }
 
 .root > section > p {
-  color: var(--grey-color-1);
+  color: var(--palette-black-20);
   font-size: 1rem;
   line-height: 1.1875rem;
   margin-bottom: 11vh;

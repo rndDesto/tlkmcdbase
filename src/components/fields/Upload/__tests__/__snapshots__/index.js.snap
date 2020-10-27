@@ -2,16 +2,18 @@
 
 exports[`src/components/fields/Upload render 1`] = `
 <div
-  className="true"
+  className=""
 >
   <label>
     
   </label>
   <div
-    className="true"
+    className=""
   >
     <label>
-      <p />
+      <p>
+        Belum ada file dipilih
+      </p>
       <p>
         Upload
       </p>
@@ -28,13 +30,13 @@ exports[`src/components/fields/Upload render 1`] = `
 
 exports[`src/components/fields/Upload render 2`] = `
 <div
-  className="true"
+  className=""
 >
   <label>
     
   </label>
   <div
-    className="true"
+    className=""
   >
     <label>
       <p>

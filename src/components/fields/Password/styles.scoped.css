@@ -1,7 +1,7 @@
 .root > div {
   align-items: center;
   background-color: #FFFFFF;
-  border: 0.0625rem solid var(--light-text-color);
+  border: 0.0625rem solid var(--palette-text-light-2);
   border-radius: 0.25rem;
   display: flex;
   margin-top: 0.625rem;
@@ -10,11 +10,11 @@
 }
 
 .root > div.focus {
-  border-color: var(--primary-color);
+  border-color: var(--palette-base-primary-main);
 }
 
 .root > label {
-  color: var(--grey-color-1);
+  color: var(--palette-black-20);
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: bold;
@@ -23,7 +23,7 @@
 .root > div > input {
   border: none;
   box-shadow: none;
-  color: var(--text-color);
+  color: var(--palette-black-10);
   display: block;
   flex: 1;
   font-size: 0.875rem;
@@ -32,7 +32,7 @@
 }
 
 .root > div > input::placeholder {
-  color: var(--light-text-color);
+  color: var(--palette-text-light-2);
 }
 
 .root > div > button {

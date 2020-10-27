@@ -1,5 +1,5 @@
 .root > label {
-  color: var(--grey-color-1);
+  color: var(--palette-black-20);
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: bold;
@@ -20,9 +20,9 @@
 
 .root > div > label > p:nth-child(2) {
   align-items: center;
-  background: var(--primary-color);
+  background: var(--palette-base-primary-main);
   border-radius: 3px;
-  color: var(--background-color-2);
+  color: var(--palette-common-white);
   display: flex;
   justify-content: center;
   padding: 7px 16px;
@@ -31,10 +31,10 @@
 }
 
 .root > div {
-  border: 0.0625rem solid var(--light-text-color);
+  border: 0.0625rem solid var(--palette-text-light-2);
   border-radius: 0.25rem;
   box-shadow: none;
-  color: var(--text-color);
+  color: var(--palette-black-10);
   display: block;
   font-size: 0.875rem;
   font-weight: bold;
@@ -46,15 +46,15 @@
 }
 
 .root.placeholder > label > p:first-child  {
-  color: var(--light-text-color);
+  color: var(--palette-text-light-2);
 }
 
 .root > .error {
-  border-color: var(--error-color);
+  border-color: var(--palette-textfield-error-main);
 }
 
 .root + small.error {
-  color: var(--error-color);
+  color: var(--palette-textfield-error-main);
   display: block;
   font-size: 0.75rem;
 }

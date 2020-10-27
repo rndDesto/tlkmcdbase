@@ -2,7 +2,7 @@
 
 exports[`src/components/forms/Login render 1`] = `
 <form
-  onSubmit={[Function]}
+  onSubmit={[MockFunction]}
 >
   <ForwardRef
     component={[Function]}
@@ -30,8 +30,9 @@ exports[`src/components/forms/Login render 1`] = `
   <Button
     buttonProps={Object {}}
     className=""
+    disabled={true}
     onClick={[Function]}
-    onSubmit={[Function]}
+    onSubmit={[MockFunction]}
   >
     MASUK
   </Button>

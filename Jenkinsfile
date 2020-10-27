@@ -4,11 +4,11 @@ env.nodeName = ""
 
 pipeline {
     parameters {
-        string(name: 'PRODUCTION_NAMESPACE',       description: 'Production Namespace',                 defaultValue: '')
-        string(name: 'STAGING_NAMESPACE',          description: 'Staging Namespace',                    defaultValue: '')
-        string(name: 'DEVELOPMENT_NAMESPACE',      description: 'Development Namespace',                defaultValue: '')
+        string(name: 'PRODUCTION_NAMESPACE',       description: 'Production Namespace',                 defaultValue: 'logee-prod')
+        string(name: 'STAGING_NAMESPACE',          description: 'Staging Namespace',                    defaultValue: 'logee-stage')
+        string(name: 'DEVELOPMENT_NAMESPACE',      description: 'Development Namespace',                defaultValue: 'logee-dev')
 
-        string(name: 'DOCKER_IMAGE_NAME',          description: 'Docker Image Name',                    defaultValue: '')
+        string(name: 'DOCKER_IMAGE_NAME',          description: 'Docker Image Name',                    defaultValue: 'logee-frontend-trans')
 
         string(name: 'CHAT_ID',                    description: 'chat id of telegram group',            defaultValue: '-383243277')
     }
