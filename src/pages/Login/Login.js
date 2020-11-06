@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core';
 import React from 'react';
 
 const Login = () => {
@@ -5,6 +6,7 @@ const Login = () => {
     <div>
       Login
       <img src="/assets/ic-close.svg" />
+      <Button color="primary" variant="contained">ss</Button>
     </div>
   );
 };

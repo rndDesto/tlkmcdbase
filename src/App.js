@@ -8,6 +8,8 @@ import { checkExpireTime, clearStorages, getToken } from './utils/storage';
 import pages from './pages';
 import AppContextProvider from './contexts';
 import { ROUTES } from './configs';
+import { ThemeProvider } from '@material-ui/core';
+import theme from './utils/theme';
 
 const noAuthRoutes = [ROUTES.LOGIN()];
 const noAuth = noAuthRoutes.some(r => location.pathname.match(r));
@@ -24,12 +26,14 @@ if (!getToken() && !noAuth) {
 const App = ({ history, store }) => (
   <Provider store={store}>
     <Router history={history}>
-      <AppContextProvider>
-        <Switch>
-          <Route component={pages.Login} exact path={ROUTES.LOGIN()} />
-          <Route component={pages.Error404} />
-        </Switch>
-      </AppContextProvider>
+      <ThemeProvider theme={theme}>
+        <AppContextProvider>
+          <Switch>
+            <Route component={pages.Login} exact path={ROUTES.LOGIN()} />
+            <Route component={pages.Error404} />
+          </Switch>
+        </AppContextProvider>
+      </ThemeProvider>
     </Router>
   </Provider>
 );
