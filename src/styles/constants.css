@@ -75,7 +75,7 @@
 
   /* font format */
   --typography-font-family: 'Lato', sans-serif;
-  font-size: calc((100vw / var(--screen-width)) * 16);
+  /* font-size: calc((100vw / var(--screen-width)) * 16); */
 
   /* text color */
   --palette-text-dark: #212121;

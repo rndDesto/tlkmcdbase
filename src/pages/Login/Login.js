@@ -4,6 +4,7 @@ const Login = () => {
   return (
     <div>
       Login
+      <img src="/assets/ic-close.svg" />
     </div>
   );
 };

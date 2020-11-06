@@ -3,5 +3,8 @@
 exports[`src/pages/Login render 1`] = `
 <div>
   Login
+  <img
+    src="/assets/ic-close.svg"
+  />
 </div>
 `;
