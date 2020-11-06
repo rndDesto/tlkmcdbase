@@ -15,6 +15,7 @@ const Login = () => {
       <img src="/assets/ic-close.svg" />
       <DataButton
         buttonProps={{ color:'primary', variant:'contained', disabled:isLoading }}
+        id="mantul"
         isLoading={isLoading}
         onClick={mantul}>ini button</DataButton>
     </div>

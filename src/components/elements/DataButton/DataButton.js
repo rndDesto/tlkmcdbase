@@ -7,9 +7,11 @@ const DataButton = (props) => {
     buttonProps,
     children,
     onClick,
+    id,
     isLoading } = props;
   return (
     <Button
+      id={id}
       {...buttonProps}
       onClick={onClick}>
       {isLoading ? 'Mengirim':children}</Button>
@@ -19,6 +21,7 @@ const DataButton = (props) => {
 DataButton.defaultProps = {
   buttonProps: {},
   children: null,
+  id:'',
   isLoading:false,
   onClick: () => {},
 };
@@ -26,6 +29,7 @@ DataButton.defaultProps = {
 DataButton.propTypes = {
   buttonProps: PropTypes.object,
   children: PropTypes.node,
+  id:PropTypes.string,
   isLoading: PropTypes.bool,
   onClick: PropTypes.func,
 };
