@@ -1,12 +1,22 @@
-import { Button } from '@material-ui/core';
-import React from 'react';
+import React, { useState } from 'react';
+import DataButton from '../../components/elements/DataButton';
 
 const Login = () => {
+  const [isLoading, setIsLoading]= useState(false);
+  const mantul = ()=>{
+    setIsLoading(true);
+    setTimeout(()=>{
+      setIsLoading(false);
+    },5000);
+  };
   return (
     <div>
       Login
       <img src="/assets/ic-close.svg" />
-      <Button color="primary" variant="contained">ss</Button>
+      <DataButton
+        buttonProps={{ color:'primary', variant:'contained', disabled:isLoading }}
+        isLoading={isLoading}
+        onClick={mantul}>ini button</DataButton>
     </div>
   );
 };
